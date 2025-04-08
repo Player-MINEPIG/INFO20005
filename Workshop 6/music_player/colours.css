@@ -1,0 +1,10 @@
+:root{
+  --colour-navbar: #ffef94;
+  --colour-song-details: rgba(0, 247, 255, 0.153);
+  --colour-controls: rgb(177, 255, 132);
+  --colour-progress-played: rgb(148, 148, 148);
+  --colour-progress-left: rgb(221, 221, 221);
+  --colour-text: rgb(185, 119, 250);
+  --colour-icons: rgb(185, 185, 185);
+  --colour-circle: rgb(255, 255, 171);
+}
