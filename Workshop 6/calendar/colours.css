@@ -1,17 +1,17 @@
 /* EXERCISE START */
 
 .task-type-1{
-    background-color: #FF00FF;
+    background-color: #E6B89C;  /* 温暖的米色，给人舒适感 */
   }
   
   .task-type-2{
-    background-color: #00FFFF;
+    background-color: #9C755F;  /* 深棕色，像秋天的落叶 */
   }
   
   .task-type-3{
-    background-color: #8000FF;
+    background-color: #D4A59A;  /* 柔和的玫瑰色，温暖而舒适 */
   }
   
   .task-type-4{
-    background-color: #CCFF00;
+    background-color: #B5BEA1;  /* 柔和的橄榄绿，让人联想到森林 */
   }
