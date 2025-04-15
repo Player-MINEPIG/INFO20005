@@ -28,6 +28,9 @@ function difficultyHard() {
 var wordToGuess;
 function startGame() {
     document.getElementById("guessesLeft").innerHTML = "guesses left: " + guessLeft;
+    document.getElementById("guess").value = "";
+    document.getElementById("rightGuess").innerHTML = "right guesses: ";
+    document.getElementById("wrongGuess").innerHTML = "wrong guesses: ";
     hideElement("startButton");
     showElement("mainGame");
     showElement("RRguess");
