@@ -9,55 +9,39 @@
 </head>
 <body>
     <div id="chooseDifficulty">
-        <h1>Show/Hide Elements</h1>
-        <div class="tests">
-          
-          <button onclick="showElement()">Show Button</button>
-          
-          <button id="bottonToHide" onclick="hideElement()">Hide Button</button>
-          
+        <h1>Guess a Word</h1>
+        <button title="lets gooo" onclick="difficultylEasy()">easy</button>
+        <button title="not difficult" onclick="difficultyMedium()">normal</button>
+        <button title="a challenge" onclick="difficultyHard()">hard</button>
+    </div>
+    <div id="startButton">
+        <h1>Guess a Word</h1>
+        <button onclick="startGame()">Start</button>
+        <p>Note: Some words may contain a hyphen(-) ex: X-ray</p>
+    </div>
+    <div id="mainGame">
+        <p id="question"></p>
+        <input type="text" id="guess" maxlength="1">
+        <div>
+            <button onclick="enterGuess()">Enter Guess</button>
         </div>
-      <h1>Random Word Generator</h1>
-        <div class="tests">
-          
-          <button onclick="GetRandomWord()">Random Word</button>
-          
-          <p > Random Generated word:</p>
-          <p id="randomWordLable"> </p>
+    </div>
+    <div id="RRguess">
+        <p id="rightGuess"></p>
+        <p id="wrongGuess"></p>
+        <p id="guessesLeft"></p>
+    </div>
+    <div id="youLose">
+        <h1>You Lose</h1>
+        <div>
+            <button onclick="restart()">Play again?</button>
         </div>
-      <h1>Difficulty</h1>
-        <div class="tests">
-          
-          <button onclick="startEasy()">Easy</button>
-          
-          <button onclick="startNormal()">Normal</button>
-          
-          <button onclick="startHard()">Hard</button>
-          
-          <p> Lives:</p>
-          <p id="livesLabel"> 0 </p>
-        </div>
-      <h1>Text Input</h1>
-        <div class="tests">
-          
-          <button onclick="submitGuess()">Submit Guess</button>
-          
-          <input type="inputText" id="guessInput">
-          <p id="inputCharLable"> Input character</p>
-        </div>
-        <div class="tests">
-          <p> Correct Guess:</p>
-          <p id="correctGuessLabel"> </p>
-        </div>
-        <div class="tests">
-          <p> Wrong Guess:</p>
-          <p id="wrongGuessLabel"> </p>
-        </div>
-      <h1>Restart</h1>
-        <div class="tests">
-          
-          <button onclick="restart()">Restart</button>
-          
+        <p id="correctWordWas"></p>
+    </div>
+    <div id="youWin">
+        <h2>You Win</h2>
+        <div>
+            <button onclick="restart()">Play again?</button>
         </div>
     </div>
 </body>

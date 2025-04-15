@@ -1,76 +1,31 @@
-function showElement() {
-    document.getElementById("bottonToHide").style.display = "block";
+
+function difficultylEasy() {
+
 }
 
-function hideElement() {
-    document.getElementById("bottonToHide").style.display = "none";
-}
-
-var wordToGuess = "";
-
-function GetRandomWord() {
-  var randomWords = ["humor", "miniature", "amusing", "creepy", "fact", "risk", "verse", "land", "lumpy", "perfect"]
-
-    /* Write code here to generate a random number and asign to wordToGuess the corresponding word */
-    wordToGuess = randomWords[Math.floor(Math.random() * randomWords.length)];
-  
-  document.getElementById("randomWordLable").innerHTML = wordToGuess;
+function difficultyMedium() {
   
 }
 
-var guessLives = 0;
+function difficultyHard() {
 
-function startEasy() {
-  
-    /* Assign the number of guesses to guessLives */
-    guessLives = 10;
-  
-  document.getElementById("livesLabel").innerHTML = guessLives;
 }
 
-function startNormal() {
-  
-    /* Assign the number of guesses to guessLives */
-    guessLives = 5;
-  
-  document.getElementById("livesLabel").innerHTML = guessLives;
+function startGame(){
+
 }
 
-function startHard() {
-  
-    /* Assign the number of guesses to guessLives */
-    guessLives = 3;
-  
-  document.getElementById("livesLabel").innerHTML = guessLives;
+
+function getRandomWord() {
+    var randomWords = ["humor", "miniature", "amusing", "creepy", "fact", "risk", "verse", "land", "lumpy", "holiday", "glorious", "weigh", "brake", "pretty", "grin", "capricious", "bite-sized", "misty", "ignore", "certain", "sloppy", "dress", "true", "zonked", "observation", "action", "various", "want", "direful", "suck", "dress", "scarecrow", "judge", "madly", "quizzical", "consist", "fierce", "love", "arrest", "serve", "fit", "hug", "tan", "curve", "eatable", "tub", "race", "innocent", "open", "preach", "steady", "acoustics", "lock", "field", "arrange", "rifle", "learned", "toe", "flow", "competition", "ill-fated", "oatmeal", "match", "male", "measure", "loaf", "smile", "wrestle", "dull", "food", "locket", "bell", "beg", "strengthen", "responsible", "enchanting", "loutish", "switch", "idea", "nine", "squeamish", "pig", "bat", "dear", "trains", "owe", "frogs", "assorted", "lonely", "hurry", "natural", "sun", "snow", "obnoxious", "broken", "friend", "bright", "cake", "sour", "permit", "economic", "lovely", "quick", "van", "tempt", "apparel", "decay", "business", "adjustment", "blushing", "makeshift", "slippery", "load", "winter", "exist", "tongue", "country", "roll", "fast", "moor", "possess", "pat", "pass", "books", "impartial", "hospitable", "dust", "naughty", "extra-large", "tacky", "produce", "committee", "fuzzy", "judicious", "nebulous", "stick", "ear", "copy", "friendly", "press", "distinct", "vegetable", "upset", "venomous", "statement", "sulky", "spell", "x-ray", "square", "taste", "great", "thumb", "adjoining", "chilly", "test", "ancient", "green", "badge", "work", "repeat", "free", "elderly", "doctor", "difficult", "grubby", "approval", "turn", "vivacious", "thundering", "cherries", "rest", "plan", "crime", "sticks", "wealthy", "phone", "suspend", "gullible", "fence", "note", "wall", "interest", "coil", "jump", "enchanted", "funny", "racial", "greasy", "polish", "elbow", "smart", "bore", "crowd", "glistening", "oval", "eggs", "nauseating", "detailed", "veil", "coal"]
+
+    
 }
 
-function submitGuess() {
-    var guessChar = document.getElementById("guessInput").value;
-    checkGuess(guessChar);
-}
+function enterGuess() {
 
-var correctGuess = [];
-var wrongGuess = [];
-
-function checkGuess(guessChar) {
-    if (wordToGuess === guessChar) {
-        correctGuess.push(guessChar);
-        document.getElementById("correctGuessLabel").innerHTML = correctGuess.join(", ");
-    } else {
-        wrongGuess.push(guessChar);
-        guessLives--;
-        document.getElementById("livesLabel").innerHTML = guessLives;
-    }
-    document.getElementById("wrongGuessLabel").innerHTML = wrongGuess.join(", ");
 }
 
 function restart() {
-    correctGuess = [];
-    wrongGuess = [];
-    document.getElementById("correctGuessLabel").innerHTML = "";
-    document.getElementById("wrongGuessLabel").innerHTML = "";
-    wordToGuess = "";
-    document.getElementById("randomWordLable").innerHTML = "";
-    document.getElementById("guessInput").value = "";
-    document.getElementById("livesLabel").innerHTML = "";
+    
 }
