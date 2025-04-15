@@ -1,4 +1,3 @@
-
 body {
   background-color: #bddbe5;
   background-size: 100%;
@@ -10,3 +9,8 @@ body {
   text-align: center;
   flex-direction: column;
 }
+
+#chooseDifficulty ~ div {
+    display: none;
+}
+
